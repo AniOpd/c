@@ -12,11 +12,11 @@ ptr=ptr->next;
 }
 struct Node*search(struct Node*head,int x){
 struct Node*ptr=head;
-int count=0;
+int count=-1;
 while(ptr!=NULL){
     count++;
 if(ptr->data ==x){
-printf("the element %d is at %d",x,count);
+printf("the element %d is at index %d",x,count);
 }
 ptr=ptr->next;
 }
