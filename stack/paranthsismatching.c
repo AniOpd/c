@@ -56,41 +56,6 @@ int pop(struct stack *ptr)
  int stacktop(struct stack *ptr){
        return ptr->arr[ptr->top];
  }
-// int ismatchingpair(char ch1,char ch2){
-// if(ch1=='(' && ch2==')'){
-//     return 1;
-// }
-// if(ch1=='{' && ch2=='}'){
-//     return 2;
-// }
-// if(ch1=='['&& ch2==']'){
-//     return 3;
-// }
-// else {
-//     return 0;
-// }
-// }
-// int parenthesismatching(char exp[],struct stack*ptr){
-// int i=0;
-// while(i!='\0'){
-//     if(exp[i]=='('||'{'||']'){
-//         push(ptr,exp[i]);
-//     }
-//     if(exp[i]==')'||'}'||']'&&ptr->top==-1){
-//         return 0;
-//     }
-//     if(ismatchingpair(ptr->arr[ptr->top],exp[i])){
-//         pop(ptr);
-//     }
-//     i++;
-// }
-// if(isempty(ptr)){
-//    return 1;
-// }
-// else{
-//     return 0;
-// }
-// }
 int pra(char *exp){
 struct stack*sp=(struct stack*)malloc(sizeof(struct stack));
 sp->size=1000;
