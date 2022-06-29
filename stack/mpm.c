@@ -111,7 +111,8 @@ else{
 }
 int main()
 {
-    char *exp="kafdsdjf(){{}}}}}(]pp][][";
+    char exp[100];
+    scanf("%s",exp);
     if (parenthesismatching(exp))
     {
         printf("The parenthesis are in correct order\n");

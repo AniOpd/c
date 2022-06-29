@@ -5,7 +5,7 @@ struct Node{
 int data;
 struct Node*next;
 };
-
+//display function
 struct Node*display(struct Node*head){
 struct Node*p=head;
 do{
@@ -14,6 +14,8 @@ p=p->next;
 }while(p!=head);
 return head;
 }
+
+//for insetion of node at head node
 struct Node* insertathead(struct Node*head, int data){
 struct Node*ptr=(struct Node*)malloc(sizeof(struct Node));
 ptr->data=data;
@@ -26,7 +28,7 @@ p->next=ptr;
 head=ptr;
 return head;
 }
-
+//main function
 int main(){
    struct Node *head;
     struct Node *first;
